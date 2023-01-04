@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My custome css links-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <picture>
+          <img src="./images/image-equilibrium.jpg" alt="" />
+          <div class="overlay">
+            <img class="overlay__icon" src="./images/icon-view.svg" alt="" />
+          </div>
+        </picture>
+        <h1 class="card__title hover--effect">Equilibrium #3429</h1>
+        <p class="card__desc">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="flex__group">
+          <div class="eth__amount">
+            <img src="./images/icon-ethereum.svg" alt="Etheruem icon" />
+            <span>0.041ETH</span>
+          </div>
+          <div class="days__left">
+            <img src="./images/icon-clock.svg" alt="Clock icon" />
+            <span>3 days left</span>
+          </div>
+        </div>
+        <hr />
+        <div class="arthur">
+          <img src="./images/image-avatar.png" alt="Image avatar" />
+          <p>
+            Creation of
+            <span class="authur__name hover--effect">Jules Wyvern</span>
+          </p>
+        </div>
+      </article>
+
+      <div class="attribution">
+        Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/SefalaThabiso"
+          style="color: white; text-decoration: none"
+          >@SefalaThabiso</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>

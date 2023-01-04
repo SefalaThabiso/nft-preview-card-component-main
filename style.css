@@ -1,0 +1,125 @@
+:root {
+  --crl-primary-300: hsl(215, 51%, 70%);
+  --crl-primary-200: hsl(178, 100%, 50%);
+
+  --crl-neutral-400: hsl(217, 54%, 11%);
+  --crl-neutral-300: hsl(216, 50%, 16%);
+  --crl-neutral-200: hsl(215, 32%, 27%);
+  --crl-neutral-100: hsl(0, 0%, 100%);
+
+  --fs-paragraph: 18px;
+
+  --ff-main: "Outfit", sans-serif;
+
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 600;
+}
+
+main {
+  background-color: var(--crl-neutral-400);
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--crl-primary-300);
+  font-family: var(--ff-main);
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--crl-neutral-300);
+  margin: 3rem 1.7rem;
+  padding: 1.4rem;
+  border-radius: 8px;
+  max-width: 340px;
+}
+
+.card__title {
+  color: var(--crl-neutral-100);
+}
+
+picture {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: var(--crl-primary-200);
+}
+
+.overlay__icon {
+  max-width: 40px;
+  max-height: 40px;
+  color: var(--crl-neutral-100);
+}
+
+picture:hover .overlay {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.flex__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth__amount {
+  color: var(--crl-primary-200);
+}
+
+.eth__amount,
+.days__left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.eth__amount img,
+.days__left img {
+  height: 20px;
+}
+
+.arthur {
+  display: flex;
+  gap: 20px;
+}
+
+.authur__name {
+  color: var(--crl-neutral-100);
+}
+
+.arthur img {
+  max-width: 27px;
+  max-height: 27px;
+  border: 1px solid var(--crl-neutral-100);
+  border-radius: 30px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.hover--effect:hover {
+  color: var(--crl-primary-200);
+  cursor: pointer;
+}
